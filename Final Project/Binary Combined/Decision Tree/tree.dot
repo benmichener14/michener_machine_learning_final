@@ -1,0 +1,59 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="check
+ <= 0.5\nsamples = 1467\nvalue = [713, 754]\nclass = Spam", fillcolor="#399de50e"] ;
+1 [label="subscribe
+ <= 0.5\nsamples = 1112\nvalue = [702, 410]\nclass = Not Spam", fillcolor="#e581396a"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="https
+ <= 0.5\nsamples = 996\nvalue = [702, 294]\nclass = Not Spam", fillcolor="#e5813994"] ;
+1 -> 2 ;
+3 [label="http
+ <= 0.5\nsamples = 936\nvalue = [701, 235]\nclass = Not Spam", fillcolor="#e58139aa"] ;
+2 -> 3 ;
+4 [label="please
+ <= 0.5\nsamples = 863\nvalue = [693, 170]\nclass = Not Spam", fillcolor="#e58139c0"] ;
+3 -> 4 ;
+5 [label="samples = 834\nvalue = [690, 144]\nclass = Not Spam", fillcolor="#e58139ca"] ;
+4 -> 5 ;
+6 [label="samples = 29\nvalue = [3, 26]\nclass = Spam", fillcolor="#399de5e2"] ;
+4 -> 6 ;
+7 [label="official
+ <= 0.5\nsamples = 73\nvalue = [8, 65]\nclass = Spam", fillcolor="#399de5e0"] ;
+3 -> 7 ;
+8 [label="samples = 68\nvalue = [3, 65]\nclass = Spam", fillcolor="#399de5f3"] ;
+7 -> 8 ;
+9 [label="samples = 5\nvalue = [5, 0]\nclass = Not Spam", fillcolor="#e58139ff"] ;
+7 -> 9 ;
+10 [label="makes
+ <= 0.5\nsamples = 60\nvalue = [1, 59]\nclass = Spam", fillcolor="#399de5fb"] ;
+2 -> 10 ;
+11 [label="samples = 59\nvalue = [0, 59]\nclass = Spam", fillcolor="#399de5ff"] ;
+10 -> 11 ;
+12 [label="samples = 1\nvalue = [1, 0]\nclass = Not Spam", fillcolor="#e58139ff"] ;
+10 -> 12 ;
+13 [label="samples = 116\nvalue = [0, 116]\nclass = Spam", fillcolor="#399de5ff"] ;
+1 -> 13 ;
+14 [label="came
+ <= 0.5\nsamples = 355\nvalue = [11, 344]\nclass = Spam", fillcolor="#399de5f7"] ;
+0 -> 14 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+15 [label="out
+ <= 0.5\nsamples = 350\nvalue = [6, 344]\nclass = Spam", fillcolor="#399de5fb"] ;
+14 -> 15 ;
+16 [label="views
+ <= 0.5\nsamples = 21\nvalue = [6, 15]\nclass = Spam", fillcolor="#399de599"] ;
+15 -> 16 ;
+17 [label="apparently
+ <= 0.5\nsamples = 18\nvalue = [3, 15]\nclass = Spam", fillcolor="#399de5cc"] ;
+16 -> 17 ;
+18 [label="samples = 17\nvalue = [2, 15]\nclass = Spam", fillcolor="#399de5dd"] ;
+17 -> 18 ;
+19 [label="samples = 1\nvalue = [1, 0]\nclass = Not Spam", fillcolor="#e58139ff"] ;
+17 -> 19 ;
+20 [label="samples = 3\nvalue = [3, 0]\nclass = Not Spam", fillcolor="#e58139ff"] ;
+16 -> 20 ;
+21 [label="samples = 329\nvalue = [0, 329]\nclass = Spam", fillcolor="#399de5ff"] ;
+15 -> 21 ;
+22 [label="samples = 5\nvalue = [5, 0]\nclass = Not Spam", fillcolor="#e58139ff"] ;
+14 -> 22 ;
+}
